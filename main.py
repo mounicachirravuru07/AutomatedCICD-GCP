@@ -19,6 +19,11 @@ def bob():
     val = {"value": "bob"}
     return jsonify(val)
 
+@app.route('/mounica')
+def mounica():
+    val = {"value": "mounica"}
+    return jsonify(val)
+
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
