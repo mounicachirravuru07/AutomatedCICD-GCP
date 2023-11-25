@@ -10,8 +10,8 @@ steps:
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["container", "clusters", "get-credentials", "autopilot-cluster-1", "--zone=us-central1-c"]
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["kubectl", "apply", "-f", "your-deployment-file.yaml"]
-  dir: "path/to/your/deployment/files"
+  args: ["kubectl", "apply", "-f", "app.yaml"]
+  dir: "app.yaml"
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
